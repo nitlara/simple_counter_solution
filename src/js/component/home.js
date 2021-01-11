@@ -1,5 +1,6 @@
 import React from "react";
 import UserProfile from "./UserProfile";
+import BasicUserProfile from "./BasicUserProfile";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -9,12 +10,12 @@ export function Home() {
 	return (
 		<div className="text-center mt-5">
 			<h1>Hello there! Welcome to first functional component! </h1>
-			<UserProfile
+			<BasicUserProfile
 				avatarUrl={rigoImage}
 				userPersonalData={{
 					name: "Erwin",
 					lastName: "Aguero",
-					age: 31
+					age: 0
 				}}
 				description={
 					"Lorem Ipsum is simply dummy text of the printing and typesetting industry."
